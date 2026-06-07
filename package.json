@@ -1,7 +1,7 @@
 {
-    "name": "@srawanshr/tflix",
+    "name": "@finchen/tflix",
     "appName": "TFlix",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "description": "TFlix transforms cinehd.at into a TV-friendly experience for Samsung TVs running TizenBrew with enhanced remote navigation.",
     "packageType": "mods",
     "websiteURL": "https://cinehd.at/home",
