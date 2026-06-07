@@ -1,46 +1,46 @@
 {
-  "name": "@srawanshr/tflix",
-  "appName": "TFlix",
-  "version": "2.0.0",
-  "description": "TFlix transforms CineHD.app into a TV-friendly experience for Samsung TVs running TizenBrew with enhanced remote navigation.",
-  "packageType": "mods",
-  "websiteURL": "https://cinehd.app/home",
-  "main": "dist/userScript.js",
-  "scripts": {
-    "build": "cd mods && npm install && npm run build && cd ../service && npm install && npm run build && cd ..",
-    "prepare": "npm run build",
-    "prepublishOnly": "npm run build"
-  },
-  "author": "srawanshr",
-  "serviceFile": "dist/service.js",
-  "keys": [
-    "MediaPlayPause",
-    "MediaPlay",
-    "MediaPause",
-    "MediaStop",
-    "MediaFastForward",
-    "MediaRewind",
-    "MediaTrackNext",
-    "MediaTrackPrevious"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/srawanshr/TFlix"
-  },
-  "bugs": {
-    "url": "https://github.com/srawanshr/TFlix/issues"
-  },
-  "homepage": "https://github.com/srawanshr/TFlix#readme",
-  "keywords": [
-    "tizenbrew",
-    "tizen",
-    "samsung",
-    "tv",
-    "cinehd",
-    "streaming"
-  ],
-  "license": "MIT",
-  "publishConfig": {
-    "access": "public"
-  }
+    "name": "@srawanshr/tflix",
+    "appName": "TFlix",
+    "version": "2.0.0",
+    "description": "TFlix transforms cinehd.at into a TV-friendly experience for Samsung TVs running TizenBrew with enhanced remote navigation.",
+    "packageType": "mods",
+    "websiteURL": "https://cinehd.at/home",
+    "main": "dist/userScript.js",
+    "scripts": {
+        "build": "cd mods && npm install && npm run build && cd ../service && npm install && npm run build && cd ..",
+        "prepare": "npm run build",
+        "prepublishOnly": "npm run build"
+    },
+    "author": "srawanshr",
+    "serviceFile": "dist/service.js",
+    "keys": [
+        "MediaPlayPause",
+        "MediaPlay",
+        "MediaPause",
+        "MediaStop",
+        "MediaFastForward",
+        "MediaRewind",
+        "MediaTrackNext",
+        "MediaTrackPrevious"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/srawanshr/TFlix"
+    },
+    "bugs": {
+        "url": "https://github.com/srawanshr/TFlix/issues"
+    },
+    "homepage": "https://github.com/srawanshr/TFlix#readme",
+    "keywords": [
+        "tizenbrew",
+        "tizen",
+        "samsung",
+        "tv",
+        "cinehd",
+        "streaming"
+    ],
+    "license": "MIT",
+    "publishConfig": {
+        "access": "public"
+    }
 }

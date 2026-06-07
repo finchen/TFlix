@@ -8,7 +8,7 @@
  */
 function enhanceContentItems() {
   const selectors = [
-    // CineHD.app content links
+    // cinehd content links
     'a[href^="/movie/"]',
     'a[href^="/tv/"]',
     // Generic media card classes
@@ -36,8 +36,8 @@ function enhanceContentItems() {
     // Add data attribute for easier selection
     item.setAttribute('data-tflix-item', index);
     
-    // Special handling for CineHD.app
-    if (window.location.hostname.includes('cinehd.app')) {
+    // Special handling for cinehd
+    if (window.location.hostname.includes('cinehd')) {
       const anchor = item.tagName === 'A' ? item : item.querySelector('a');
       if (anchor && anchor.href && (anchor.href.includes('/movie/') || anchor.href.includes('/tv/'))) {
         item.addEventListener('click', (e) => {
@@ -74,8 +74,8 @@ function enhanceContentItems() {
     });
   });
   
-  // For CineHD.app, detect and enhance play buttons specifically
-  if (window.location.hostname.includes('cinehd.app')) {
+  // For cinehd, detect and enhance play buttons specifically
+  if (window.location.hostname.includes('cinehd')) {
     enhanceCinebyPlayButtons();
   }
 }
@@ -234,8 +234,8 @@ function addSearchNavigationHandler() {
     }
   });
   
-  // For CineHD.app, make all search links accessible
-  if (window.location.hostname.includes('cinehd.app')) {
+  // For cinehd, make all search links accessible
+  if (window.location.hostname.includes('cinehd')) {
     const searchLinks = document.querySelectorAll('a[href*="search"]');
     searchLinks.forEach(link => {
       link.setAttribute('tabindex', '0');
@@ -282,9 +282,9 @@ function activateSearch(element) {
     return;
   }
   
-  // For CineHD.app, navigate to the search page
-  if (window.location.hostname.includes('cinehd.app')) {
-    window.location.href = 'https://cinehd.app/search';
+  // For cinehd, navigate to the search page
+  if (window.location.hostname.includes('cinehd')) {
+    window.location.href = 'https://cinehd/search';
     return;
   }
 }
@@ -313,7 +313,7 @@ function showSearchToast() {
 }
 
 /**
- * Enhance video player with better controls specifically for CineHD.app
+ * Enhance video player with better controls specifically for cinehd
  */
 function enhanceCinebyVideoPlayer() {
   // Only run on movie/TV pages
@@ -492,7 +492,7 @@ function showVideoInfoToast(message) {
 }
 
 /**
- * Enhance play buttons specifically for CineHD.app
+ * Enhance play buttons specifically for cinehd
  */
 function enhanceCinebyPlayButtons() {
   // Only run on movie/TV info pages
@@ -670,9 +670,9 @@ function detectAndEnhanceContent() {
   enhanceSearchFunctionality();
   enhanceCinebyVideoPlayer();
   
-  // Special handling for CineHD.app on movie/TV info pages
+  // Special handling for cinehd on movie/TV info pages
   const path = window.location.pathname;
-  if (window.location.hostname.includes('cinehd.app') &&
+  if (window.location.hostname.includes('cinehd') &&
       (path.includes('/movie/') || path.includes('/tv/'))) {
     enhanceCinebyPlayButtons();
   }

@@ -1,6 +1,6 @@
 # TFlix
 
-TFlix is a TizenBrew module that transforms [CineHD.app](https://cinehd.app/home) into a TV-friendly experience for Samsung TVs. It creates a Netflix-like navigation system optimized for remote control operation.
+TFlix is a TizenBrew module that transforms [cinehd.at](https://cinehd.at/home) into a TV-friendly experience for Samsung TVs. It creates a Netflix-like navigation system optimized for remote control operation.
 
 ## Features
 
@@ -48,7 +48,7 @@ TFlix is a TizenBrew module that transforms [CineHD.app](https://cinehd.app/home
 
 ### Project Structure
 
-- `mods/` - Contains the JavaScript modules for enhancing CineHD.app
+- `mods/` - Contains the JavaScript modules for enhancing cinehd.at
 - `service/` - Contains the service code for handling TV functionality
 - `dist/` - Contains the built module files
 
@@ -68,4 +68,4 @@ MIT
 
 ---
 
-*TFlix is a community-created module for TizenBrew and is not officially affiliated with CineHD.app.*
+*TFlix is a community-created module for TizenBrew and is not officially affiliated with cinehd.at.*
