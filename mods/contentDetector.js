@@ -8,7 +8,7 @@
  */
 function enhanceContentItems() {
   const selectors = [
-    // cinehd content links
+    // cineby content links
     'a[href^="/movie/"]',
     'a[href^="/tv/"]',
     // Generic media card classes
@@ -36,8 +36,8 @@ function enhanceContentItems() {
     // Add data attribute for easier selection
     item.setAttribute('data-tflix-item', index);
     
-    // Special handling for cinehd
-    if (window.location.hostname.includes('cinehd')) {
+    // Special handling for cineby
+    if (window.location.hostname.includes('cineby')) {
       const anchor = item.tagName === 'A' ? item : item.querySelector('a');
       if (anchor && anchor.href && (anchor.href.includes('/movie/') || anchor.href.includes('/tv/'))) {
         item.addEventListener('click', (e) => {
@@ -74,8 +74,8 @@ function enhanceContentItems() {
     });
   });
   
-  // For cinehd, detect and enhance play buttons specifically
-  if (window.location.hostname.includes('cinehd')) {
+  // For cineby, detect and enhance play buttons specifically
+  if (window.location.hostname.includes('cineby')) {
     enhanceCinebyPlayButtons();
   }
 }
@@ -234,8 +234,8 @@ function addSearchNavigationHandler() {
     }
   });
   
-  // For cinehd, make all search links accessible
-  if (window.location.hostname.includes('cinehd')) {
+  // For cineby, make all search links accessible
+  if (window.location.hostname.includes('cineby')) {
     const searchLinks = document.querySelectorAll('a[href*="search"]');
     searchLinks.forEach(link => {
       link.setAttribute('tabindex', '0');
@@ -282,9 +282,9 @@ function activateSearch(element) {
     return;
   }
   
-  // For cinehd, navigate to the search page
-  if (window.location.hostname.includes('cinehd')) {
-    window.location.href = 'https://cinehd/search';
+  // For cineby, navigate to the search page
+  if (window.location.hostname.includes('cineby')) {
+    window.location.href = 'https://cineby/search';
     return;
   }
 }
@@ -313,7 +313,7 @@ function showSearchToast() {
 }
 
 /**
- * Enhance video player with better controls specifically for cinehd
+ * Enhance video player with better controls specifically for cineby
  */
 function enhanceCinebyVideoPlayer() {
   // Only run on movie/TV pages
@@ -492,7 +492,7 @@ function showVideoInfoToast(message) {
 }
 
 /**
- * Enhance play buttons specifically for cinehd
+ * Enhance play buttons specifically for cineby
  */
 function enhanceCinebyPlayButtons() {
   // Only run on movie/TV info pages
@@ -670,9 +670,9 @@ function detectAndEnhanceContent() {
   enhanceSearchFunctionality();
   enhanceCinebyVideoPlayer();
   
-  // Special handling for cinehd on movie/TV info pages
+  // Special handling for cineby on movie/TV info pages
   const path = window.location.pathname;
-  if (window.location.hostname.includes('cinehd') &&
+  if (window.location.hostname.includes('cineby') &&
       (path.includes('/movie/') || path.includes('/tv/'))) {
     enhanceCinebyPlayButtons();
   }

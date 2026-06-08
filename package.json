@@ -1,10 +1,10 @@
 {
     "name": "@finchen/tflix",
     "appName": "TFlix",
-    "version": "2.0.1",
-    "description": "TFlix transforms cinehd.at into a TV-friendly experience for Samsung TVs running TizenBrew with enhanced remote navigation.",
+    "version": "2.0.2",
+    "description": "TFlix transforms cineby.at into a TV-friendly experience for Samsung TVs running TizenBrew with enhanced remote navigation.",
     "packageType": "mods",
-    "websiteURL": "https://cinehd.at/home",
+    "websiteURL": "https://cineby.at/home",
     "main": "dist/userScript.js",
     "scripts": {
         "build": "cd mods && npm install && npm run build && cd ../service && npm install && npm run build && cd ..",
@@ -36,7 +36,7 @@
         "tizen",
         "samsung",
         "tv",
-        "cinehd",
+        "cineby",
         "streaming"
     ],
     "license": "MIT",

@@ -1,7 +1,7 @@
 {
     "name": "@zyrecx/tflix-mods",
     "version": "1.0.0",
-    "description": "TFlix module for cinehd.at",
+    "description": "TFlix module for cineby.at",
     "main": "index.js",
     "type": "module",
     "scripts": {
@@ -12,7 +12,7 @@
         "tizen",
         "samsung",
         "tv",
-        "cinehd"
+        "cineby"
     ],
     "author": "Zyrex",
     "license": "MIT",
